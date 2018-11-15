@@ -54,11 +54,11 @@ if(strtolower($username) == 'stefaniscion'){
   //HELP
 if($command == '/help' || $command == '/help@ilprocionebot'){
   $r_text = 
-'<b>help<b> - Imparara a comunicare con i procioni!
-<b>about<b> - Info su questo procione e sul suo creatore
-<b>procioni<b> - Invia foto di procioni
-<b>selfie<b> - Ti invio un mio selfie
-<b>piave<b> - Per soli veri procioni italiani';
+'*help* - Imparara a comunicare con i procioni!
+*about* - Info su questo procione e sul suo creatore
+*procioni* - Invia foto di procioni
+*selfie* - Ti invio un mio selfie
+*piave* - Per soli veri procioni italiani';
   $r_method  = "sendMessage";
 }
 
@@ -72,8 +72,8 @@ Corretto e mantenuto da @Stefaniscion
 Consigli? Suggerimenti? Bug? Scrivi a @Stefaniscion
 Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot
 
-Versione: <code>v1.0 Honey Raccoon</code> - 15/11/2018
-<i>-In memoria di Alex-</i>';
+Versione: `v1.0 Honey Raccoon` - 15/11/2018
+<i>__-In memoria di Alex-__</i>';
   $r_method  = "sendMessage";
 }
 
