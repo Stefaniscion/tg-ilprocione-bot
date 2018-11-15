@@ -51,23 +51,21 @@ if(strtolower($username) == 'stefaniscion'){
             USER COMMANDS
 ===================================*/
 if($command == '/help'){
-  $r_text = '
-  help - Imparara a comunicare con i procioni!\n
-  about - Info su questo procione e sul suo creatore\n
-  procioni - Invia foto di procioni\n
-  selfie - Ti invio un mio selfie\n
-  piave- Per soli veri procioni italiani\n
-  ';
+  $r_text = 
+'help - Imparara a comunicare con i procioni!
+about - Info su questo procione e sul suo creatore
+procioni - Invia foto di procioni
+selfie - Ti invio un mio selfie
+piave- Per soli veri procioni italiani';
   $r_method  = "sendMessage";
 }
 
 if($command == '/about'){
-  $r_text = '
-  Il Procione\n
-  Corretto e mantenuto da: @Stefaniscion\n
-  Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot\n
-  Versione: v1.0 Procione del 15/11/2018\n
-  ';
+  $r_text = 
+'Il Procione
+Corretto e mantenuto da: @Stefaniscion
+Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot
+Versione: v1.0 Procione del 15/11/2018';
   $r_method  = "sendMessage";
 }
 
