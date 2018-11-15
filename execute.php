@@ -17,9 +17,6 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 
-$text = trim($text);
-$text = strtolower($text);
-
 /* FORMATTA COMMAND */
 $command = isset($message['text']) ? $message['text'] : "";
 $command = trim($command);
@@ -27,7 +24,7 @@ $command = strtolower($command);
 
 
 /* PARAMETRI RESPONSE */
-$response = 'ciao';
+$response = json_encode($update);
 $method  = "sendMessage";
 
 header("Content-Type: application/json");
