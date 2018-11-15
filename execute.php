@@ -14,6 +14,7 @@ if(!$update)
 
 /* MESSAGE ARRAY SET */
 $message = isset($update['message']) ? $update['message'] : "";
+
 /* UTILITY VARS SET*/
 $text = isset($message['text']) ? $message['text'] : "";
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
@@ -23,27 +24,34 @@ $command = isset($message['text']) ? $message['text'] : "";
 $command = trim($command);
 $command = strtolower($command);
 
+/* TEST VALUES */
+$response = $command;
+$method  = "sendMessage";
+
 /*===================================
             ADMIN COMMANDS 
 ===================================*/
 if(strtolower($username) == 'stefaniscion'){ //isAdmin
   
-  if($command=='/getjson'){
+  if($command == '/getjson'){
     $response = json_encode($update);
     $method  = "sendMessage";
   }
 
 }
 
+
 /*===================================
             USER COMMANDS 
 ===================================*/
 
 // PROCIONI
-if($command=='/procioni'){
-  $response = json_encode($update);
+if($command == '/procioni'){
+  $response = 'procioni';
   $method  = "sendMessage";
 }
+
+
 
 /*===================================
               RESPONSE 
