@@ -39,7 +39,7 @@ if(strtolower($username) == 'stefaniscion'){
   if($command == '/getjson'){
     $response = json_encode($update);
     $method  = "sendMessage";
-    send($response,$method,$chatId)
+    send($response,$method,$chatId);
   }
 }
 
@@ -50,14 +50,14 @@ if(strtolower($username) == 'stefaniscion'){
 if($command == '/procioni'){
   $response = 'procioniih';
   $method  = "sendMessage";
-  send($response,$method,$chatId)
+  send($response,$method,$chatId);
 }
 
 
 /*===================================
               RESPONSE 
 ===================================*/
-
+/*
 
 header("Content-Type: application/json");
 
@@ -65,3 +65,4 @@ $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = $method;
 
 echo json_encode($parameters);
+*/
