@@ -72,6 +72,11 @@ if($command == '/procioni'){
   }
 }
 
+if($command == '/piave'){
+  $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
+  $r_method  = "sendMessage";
+}
+
 /*===================================
               RESPONSE 
 ===================================*/
