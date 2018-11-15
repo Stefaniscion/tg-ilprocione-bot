@@ -7,25 +7,48 @@ if(!$update)
   exit;
 }
 
-/* VAR SETTING */
-$message = isset($update['message']) ? $update['message'] : "";
-$messageId = isset($message['message_id']) ? $message['message_id'] : "";
-$chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
-$firstname = isset($message['chat']['first_name']) ? $message['chat']['first_name'] : "";
-$lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
-$username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
-$date = isset($message['date']) ? $message['date'] : "";
-$text = isset($message['text']) ? $message['text'] : "";
 
-/* FORMATTA COMMAND */
+/*===================================
+            VAR SETTING
+===================================*/
+
+/* MESSAGE ARRAY SET */
+$message = isset($update['message']) ? $update['message'] : "";
+/* UTILITY VARS SET*/
+$text = isset($message['text']) ? $message['text'] : "";
+$username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
+
+/* COMMAND STRING SET */
 $command = isset($message['text']) ? $message['text'] : "";
 $command = trim($command);
 $command = strtolower($command);
 
+/*===================================
+            ADMIN COMMANDS 
+===================================*/
+if(strtolower($username) == 'stefaniscion'){ //isAdmin
+  
+  if($command=='/getjson'){
+    $response = json_encode($update);
+    $method  = "sendMessage";
+  }
 
-/* PARAMETRI RESPONSE */
-$response = json_encode($update);
-$method  = "sendMessage";
+}
+
+/*===================================
+            USER COMMANDS 
+===================================*/
+
+// PROCIONI
+if($command=='/procioni'){
+  $response = json_encode($update);
+  $method  = "sendMessage";
+}
+
+/*===================================
+              RESPONSE 
+===================================*/
+
 
 header("Content-Type: application/json");
 
