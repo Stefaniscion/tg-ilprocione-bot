@@ -73,7 +73,7 @@ Consigli? Suggerimenti? Bug? Scrivi a @Stefaniscion
 Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot
 
 Versione: `v1.0 __Honey Raccoon__` - 15/11/2018
--In memoria di Alex-';
+__-In memoria di Alex-__';
   $r_method  = "sendMessage";
 }
 
