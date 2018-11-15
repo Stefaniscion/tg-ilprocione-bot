@@ -53,5 +53,10 @@ if($command == '/procioni'){
 /*===================================
               RESPONSE 
 ===================================*/
-send($response,$method,$getId);
+header("Content-Type: application/json");
+
+$parameters = array('chat_id' => $chatId, "text" => $response);
+$parameters["method"] = $method;
+
+echo json_encode($parameters).json_encode($parameters);
 
