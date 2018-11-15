@@ -52,9 +52,24 @@ if(strtolower($username) == 'stefaniscion'){
 ===================================*/
 
 if($command == '/procioni'){
-  $r_photo = 'AgADBAADPq4xG0ywaVNmFWcUiz1zlzB5mhoABHw3FPdcBTNC9M4GAAEC';
+  $photo_num = rand(1,5);
   $r_method  = "sendPhoto";
   
+  if($photo_num == 1){
+    $r_photo = 'AgADBAADPq4xG0ywaVNmFWcUiz1zlzB5mhoABHw3FPdcBTNC9M4GAAEC';
+  }
+  elseif($photo_num == 2){
+    $r_photo = 'AgADBAADQK4xG0ywaVOXv1jo2V-0KfSaoBoABFnAsfn6r5UV9cQEAAEC';
+  }
+  elseif($photo_num == 3){
+    $r_photo = 'AgADBAADQ64xG0ywaVMGQliPQqtvugllwxoABEperj8ek4m914oAAgI';
+  }
+  elseif($photo_num == 4){
+    $r_photo = 'AgADBAADRa4xG0ywaVNpoqKTI4pKLeF7mhoABKwBCNR2e2FRG9AGAAEC';
+  }
+  elseif($photo_num == 5){
+    $r_photo = '"AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC';
+  }
 }
 
 /*===================================
