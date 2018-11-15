@@ -39,7 +39,7 @@ if(strtolower($username) == 'stefaniscion'){
     $r_method  = "sendMessage";
   }
   
-  if(isset($message['photo'])){
+  elseif(isset($message['photo'])){
     $r_text = json_encode($update);
     $r_method  = "sendMessage";
   }
@@ -53,8 +53,6 @@ if(strtolower($username) == 'stefaniscion'){
 
 if($command == '/procioni'){
   $photo_num = rand(1,5);
-  $r_method  = "sendPhoto";
-  
   if($photo_num == 1){
     $r_photo = 'AgADBAADPq4xG0ywaVNmFWcUiz1zlzB5mhoABHw3FPdcBTNC9M4GAAEC';
   }
@@ -70,9 +68,16 @@ if($command == '/procioni'){
   elseif($photo_num == 5){
     $r_photo = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC';
   }
+  $r_method  = "sendPhoto";
 }
 
-if($command == '/piave'){
+elseif($command == '/selfie'){
+  $r_photo = 'AgADBAADSK4xG0ywaVP1hNWICi-Q50mMoBoABNHVr46CPIjXgMgEAAEC';
+  $r_method  = "sendPhoto";
+}
+
+
+elseif($command == '/piave'){
   $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
   $r_method  = "sendMessage";
 }
