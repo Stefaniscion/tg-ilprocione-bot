@@ -27,12 +27,12 @@ $command = strtolower($command);
 
 
 /* PARAMETRI RESPONSE */
-$response = '';
+$response = 'ciao';
 $method  = "sendMessage";
 
 header("Content-Type: application/json");
 
-$parameters = array('chat_id' => $chatId, "text" => $text);
+$parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = $method;
 
 echo json_encode($parameters);
