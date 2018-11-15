@@ -33,14 +33,15 @@ $command = strtolower($command);
             ADMIN COMMANDS
 ===================================*/
 if(strtolower($username) == 'stefaniscion'){
+  
   if($command == '/getjson'){
-    $response = json_encode($update);
-    $method  = "sendMessage";
-    }
-  if(isset($message['photo']))
-  {
-    $response = json_encode($update);
-    $method  = "sendMessage";
+    $r_text = json_encode($update);
+    $r_method  = "sendMessage";
+  }
+  
+  if(isset($message['photo'])){
+    $r_text = json_encode($update);
+    $r_method  = "sendMessage";
   }
 
 }
@@ -49,20 +50,24 @@ if(strtolower($username) == 'stefaniscion'){
 /*===================================
             USER COMMANDS
 ===================================*/
+
 if($command == '/procioni'){
-  $response = 'procioniih';
-  $method  = "sendMessage";
+  $r_photo = 'AgADBAADPq4xG0ywaVNmFWcUiz1zlzB5mhoABHw3FPdcBTNC9M4GAAEC';
+  $r_method  = "sendPhoto";
   
 }
-
 
 /*===================================
               RESPONSE 
 ===================================*/
 header("Content-Type: application/json");
 
-$parameters = array('chat_id' => $chatId, "text" => $response);
-$parameters["method"] = $method;
+$parameters = array(
+                    'chat_id' =>  $chatId, 
+                    'text'    =>  $r_text,
+                    'photo'   =>  $r_photo
+                   );
+$parameters["method"] = $r_method;
 
 echo json_encode($parameters);
 
