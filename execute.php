@@ -7,6 +7,7 @@ if(!$update)
   exit;
 }
 
+/* VAR SETTING */
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
@@ -19,7 +20,19 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
 
+/* FORMATTA COMMAND */
+$command = isset($message['text']) ? $message['text'] : "";
+$command = trim($command);
+$command = strtolower($command);
+
+
+/* PARAMETRI RESPONSE */
+$response = '';
+$method  = "sendMessage";
+
 header("Content-Type: application/json");
+
 $parameters = array('chat_id' => $chatId, "text" => $text);
-$parameters["method"] = "sendMessage";
+$parameters["method"] = $method;
+
 echo json_encode($parameters);
