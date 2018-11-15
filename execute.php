@@ -37,6 +37,12 @@ if(strtolower($username) == 'stefaniscion'){
     $response = json_encode($update);
     $method  = "sendMessage";
     }
+  if(isset($message['photo']))
+  {
+    $response = json_encode($update);
+    $method  = "sendMessage";
+  }
+
 }
 
 
