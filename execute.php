@@ -50,6 +50,8 @@ if(strtolower($username) == 'stefaniscion'){
 /*===================================
             USER COMMANDS
 ===================================*/
+  
+  //HELP
 if($command == '/help' || $command == '/help@ilprocionebot'){
   $r_text = 
 'help - Imparara a comunicare con i procioni!
@@ -60,6 +62,7 @@ piave - Per soli veri procioni italiani';
   $r_method  = "sendMessage";
 }
 
+//ABOUT
 if($command == '/about' || $command == '/about@ilprocionebot'){
   $r_text = 
 'Il Procione
@@ -69,11 +72,12 @@ Corretto e mantenuto da @Stefaniscion
 Consigli? Suggerimenti? Bug? Scrivi a @Stefaniscion
 Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot
 
-Versione: v1.0 Procione del 15/11/2018
-In memoria di Alex';
+Versione: v1.0 Honey Raccoon - 15/11/2018
+-In memoria di Alex-';
   $r_method  = "sendMessage";
 }
 
+//PROCIONI
 if($command == '/procioni' || $command == '/procioni@ilprocionebot'){
   $photo_num = rand(1,5);
   if($photo_num == 1){
@@ -94,12 +98,13 @@ if($command == '/procioni' || $command == '/procioni@ilprocionebot'){
   $r_method  = "sendPhoto";
 }
 
+//SELFIE
 elseif($command == '/selfie' || $command == '/selfie@ilprocionebot'){
   $r_photo = 'AgADBAADSK4xG0ywaVP1hNWICi-Q50mMoBoABNHVr46CPIjXgMgEAAEC';
   $r_method  = "sendPhoto";
 }
 
-
+//PIAVE
 elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
   $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
   $r_method  = "sendMessage";
