@@ -10,10 +10,10 @@ if(!$update)
 */
 
 
-
 /*===================================
             VAR SETTING
 ===================================*/
+echo "var setting...";
 
 /* MESSAGE ARRAY SET */
 $message = isset($update['message']) ? $update['message'] : "";
@@ -30,6 +30,8 @@ $command = strtolower($command);
 /* TEST VALUES */
 $response = $command;
 $method  = "sendMessage";
+
+echo "OK";
 
 
 
