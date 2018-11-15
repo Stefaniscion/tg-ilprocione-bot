@@ -40,10 +40,11 @@ if(strtolower($username) == 'stefaniscion'){
     $response = json_encode($update);
     $method  = "sendMessage";
     
-    header("Content-Type: application/json");
-    $parameters = array('chat_id' => $chatId, "text" => $response);
-    $parameters["method"] = $method;
-    echo json_encode($parameters);
+    send($response,$method,$getId);
+    send($response,$method,$getId);
+    send($response,$method,$getId);
+    send($response,$method,$getId);
+    send($response,$method,$getId);
     }
 }
 
@@ -55,10 +56,6 @@ if($command == '/procioni'){
   $response = 'procioniih';
   $method  = "sendMessage";
   
-  header("Content-Type: application/json");
-  $parameters = array('chat_id' => $chatId, "text" => $response);
-  $parameters["method"] = $method;
-  echo json_encode($parameters);
 }
 
 
