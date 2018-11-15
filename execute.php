@@ -13,7 +13,6 @@ if(!$update)
 /*===================================
             VAR SETTING
 ===================================*/
-echo "var setting...";
 
 /* MESSAGE ARRAY SET */
 $message = isset($update['message']) ? $update['message'] : "";
@@ -21,6 +20,7 @@ $message = isset($update['message']) ? $update['message'] : "";
 /* UTILITY VARS SET*/
 $text = isset($message['text']) ? $message['text'] : "";
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
+$chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
 
 /* COMMAND STRING SET */
 $command = isset($message['text']) ? $message['text'] : "";
@@ -31,10 +31,22 @@ $command = strtolower($command);
 $response = $command;
 $method  = "sendMessage";
 
-echo "OK";
+/*===================================
+            ADMIN COMMANDS
+===================================*/
+if(strtolower($username) == 'stefaniscion'){
+  $response = json_encode($update);
+  $method  = "sendMessage";
+}
 
 
-
+/*===================================
+            USER COMMANDS
+===================================*/
+if($command == '/procioni'){
+  $response = 'procioniih';
+  $method  = "sendMessage";
+}
 
 
 /*===================================
