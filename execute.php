@@ -35,8 +35,10 @@ $method  = "sendMessage";
             ADMIN COMMANDS
 ===================================*/
 if(strtolower($username) == 'stefaniscion'){
-  $response = json_encode($update);
-  $method  = "sendMessage";
+  if($command == '/getjson'){
+    $response = json_encode($update);
+    $method  = "sendMessage";
+  }
 }
 
 
