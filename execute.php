@@ -28,28 +28,7 @@ $command = strtolower($command);
 $response = $command;
 $method  = "sendMessage";
 
-/*===================================
-            ADMIN COMMANDS 
-===================================*/
-if(strtolower($username) == 'stefaniscion'){ //isAdmin
-  
-  if($command == '/getjson'){
-    $response = json_encode($update);
-    $method  = "sendMessage";
-  }
 
-}
-
-
-/*===================================
-            USER COMMANDS 
-===================================*/
-
-// PROCIONI
-if($command == '/procioni'){
-  $response = 'procioni';
-  $method  = "sendMessage";
-}
 
 
 
