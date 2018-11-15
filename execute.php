@@ -65,7 +65,7 @@ if($command == '/help' || $command == '/help@ilprocionebot'){
 //ABOUT
 if($command == '/about' || $command == '/about@ilprocionebot'){
   $r_text = 
-'<b>Il Procione<b>
+'*Il Procione*
 Il Procione è il bot definitivo per gli fan e haters dei procioni!
 
 Corretto e mantenuto da @Stefaniscion
@@ -117,8 +117,9 @@ header("Content-Type: application/json");
 
 $parameters = array(
                     'chat_id' =>  $chatId, 
-                    'text'    =>  $r_text,
-                    'photo'   =>  $r_photo
+                    'text' =>  $r_text,
+                    'photo' =>  $r_photo,
+                    'parse_mode' => 'Markdown'
                    );
 $parameters["method"] = $r_method;
 
