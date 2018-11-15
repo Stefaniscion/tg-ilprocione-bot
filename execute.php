@@ -9,6 +9,7 @@ if(!$update)
 }
 */
 
+require "functions.php";
 
 /*===================================
             VAR SETTING
@@ -38,6 +39,7 @@ if(strtolower($username) == 'stefaniscion'){
   if($command == '/getjson'){
     $response = json_encode($update);
     $method  = "sendMessage";
+    send($response,$method,$chatId)
   }
 }
 
@@ -48,6 +50,7 @@ if(strtolower($username) == 'stefaniscion'){
 if($command == '/procioni'){
   $response = 'procioniih';
   $method  = "sendMessage";
+  send($response,$method,$chatId)
 }
 
 
