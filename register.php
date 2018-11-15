@@ -1,10 +1,7 @@
 <?php
 
-// PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https://{APP NAME}.herokuapp.com/execute.php';
-$BOT_TOKEN = '{TOKEN}';
-
-// NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
+$WEBHOOK_URL = 'https://ilprocione-bot.herokuapp.com/execute.php';
+$BOT_TOKEN = $_ENV['API_KEY'];
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
 $method = 'setWebhook';
 $parameters = array('url' => $WEBHOOK_URL);
@@ -15,3 +12,5 @@ curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($handle, CURLOPT_TIMEOUT, 60);
 $result = curl_exec($handle);
 print_r($result);
+
+?>
