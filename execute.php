@@ -39,8 +39,12 @@ if(strtolower($username) == 'stefaniscion'){
   if($command == '/getjson'){
     $response = json_encode($update);
     $method  = "sendMessage";
-    send($response,$method,$chatId);
-  }
+    
+    header("Content-Type: application/json");
+    $parameters = array('chat_id' => $chatId, "text" => $response);
+    $parameters["method"] = $method;
+    echo json_encode($parameters);
+    }
 }
 
 
@@ -50,19 +54,20 @@ if(strtolower($username) == 'stefaniscion'){
 if($command == '/procioni'){
   $response = 'procioniih';
   $method  = "sendMessage";
-  send($response,$method,$chatId);
+  
+  header("Content-Type: application/json");
+  $parameters = array('chat_id' => $chatId, "text" => $response);
+  $parameters["method"] = $method;
+  echo json_encode($parameters);
 }
 
 
 /*===================================
               RESPONSE 
 ===================================*/
-/*
-
 header("Content-Type: application/json");
 
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = $method;
 
 echo json_encode($parameters);
-*/
