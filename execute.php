@@ -98,13 +98,13 @@ if($command == '/procioni' || $command == '/procioni@ilprocionebot'){
 }
 
 //SELFIE
-elseif($command == '/selfie' || $command == '/selfie@ilprocionebot'){
+if($command == '/selfie' || $command == '/selfie@ilprocionebot'){
   $r_photo = 'AgADBAADSK4xG0ywaVP1hNWICi-Q50mMoBoABNHVr46CPIjXgMgEAAEC';
   $r_method  = "sendPhoto";
 }
 
 //PIAVE
-elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
+if($command == '/piave' || $command == '/piave@ilprocionebot'){
   $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
   $r_method  = "sendMessage";
 }
@@ -114,7 +114,7 @@ elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
               LISTENER
 ===================================*/
 //PRESIDENTE LISTENER
-elseif(strpos($command,'presidente')!=false){
+if(strpos($command,'presidente')!=false){
   $r_text = 'Presidente?';
   $r_method  = "sendMessage";
 }
