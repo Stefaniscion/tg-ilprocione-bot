@@ -38,7 +38,12 @@ if(strtolower($username) == 'stefaniscion'){
     $r_method  = "sendMessage";
   }
   
-  elseif(isset($message['photo'])){
+  if($command == '/hash'){
+    $r_text = md5(file_get_contents(execute.php));
+    $r_method  = "sendMessage";
+  }
+  
+  if(isset($message['photo'])){
     $r_text = json_encode($update);
     $r_method  = "sendMessage";
   }
