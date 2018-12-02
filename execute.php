@@ -3,8 +3,7 @@ $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 
 /*
-if(!$update)
-{
+if(!$update){
   exit;
 }
 */
@@ -107,6 +106,16 @@ elseif($command == '/selfie' || $command == '/selfie@ilprocionebot'){
 //PIAVE
 elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
   $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
+  $r_method  = "sendMessage";
+}
+
+
+/*===================================
+              LISTENER
+===================================*/
+//PRESIDENTE LISTENER
+elseif(strpos($command,'presidente')){
+  $r_text = 'Presidente?';
   $r_method  = "sendMessage";
 }
 
