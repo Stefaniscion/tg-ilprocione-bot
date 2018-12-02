@@ -27,7 +27,6 @@ $command = isset($message['text']) ? $message['text'] : "";
 $command = trim($command);
 $command = strtolower($command);
 
-
 /*===================================
             ADMIN COMMANDS
 ===================================*/
@@ -38,12 +37,12 @@ if(strtolower($username) == 'stefaniscion'){
     $r_method  = "sendMessage";
   }
   
-  if($command == '/hash'){
+  elseif($command == '/hash'){
     $r_text = md5(file_get_contents(execute.php));
     $r_method  = "sendMessage";
   }
   
-  if(isset($message['photo'])){
+  elseif(isset($message['photo'])){
     $r_text = json_encode($update);
     $r_method  = "sendMessage";
   }
@@ -67,7 +66,7 @@ if($command == '/help' || $command == '/help@ilprocionebot'){
 }
 
 //ABOUT
-if($command == '/about' || $command == '/about@ilprocionebot'){
+elseif($command == '/about' || $command == '/about@ilprocionebot'){
   $r_text = 
 '*Il Procione*
 Il Procione è il bot definitivo per gli fan e haters dei procioni!
@@ -82,7 +81,7 @@ _-In memoria di Alex-_';
 }
 
 //PROCIONI
-if($command == '/procioni' || $command == '/procioni@ilprocionebot'){
+elseif($command == '/procioni' || $command == '/procioni@ilprocionebot'){
   $photo_num = rand(1,5);
   if($photo_num == 1){
     $r_photo = 'AgADBAADPq4xG0ywaVNmFWcUiz1zlzB5mhoABHw3FPdcBTNC9M4GAAEC';
@@ -103,13 +102,13 @@ if($command == '/procioni' || $command == '/procioni@ilprocionebot'){
 }
 
 //SELFIE
-if($command == '/selfie' || $command == '/selfie@ilprocionebot'){
+elseif($command == '/selfie' || $command == '/selfie@ilprocionebot'){
   $r_photo = 'AgADBAADSK4xG0ywaVP1hNWICi-Q50mMoBoABNHVr46CPIjXgMgEAAEC';
   $r_method  = "sendPhoto";
 }
 
 //PIAVE
-if($command == '/piave' || $command == '/piave@ilprocionebot'){
+elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
   $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
   $r_method  = "sendMessage";
 }
@@ -119,7 +118,7 @@ if($command == '/piave' || $command == '/piave@ilprocionebot'){
               LISTENER
 ===================================*/
 //PRESIDENTE LISTENER
-if(strpos($command,'presidente')!==false){
+elseif(strpos($command,'presidente')!==false){
   $r_text = 'Presidente?';
   $r_method  = "sendMessage";
 }
