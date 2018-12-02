@@ -119,7 +119,7 @@ if($command == '/piave' || $command == '/piave@ilprocionebot'){
               LISTENER
 ===================================*/
 //PRESIDENTE LISTENER
-if(strpos($command,'presidente')!=false){
+if(strpos($command,'presidente')!==false){
   $r_text = 'Presidente?';
   $r_method  = "sendMessage";
 }
