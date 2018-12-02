@@ -114,7 +114,7 @@ elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
               LISTENER
 ===================================*/
 //PRESIDENTE LISTENER
-elseif(strpos($command,'presidente')){
+elseif(strpos($command,'presidente')==false){
   $r_text = 'Presidente?';
   $r_method  = "sendMessage";
 }
