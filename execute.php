@@ -123,10 +123,6 @@ if(strpos($command,'presidente')!==false){
   $r_text = 'Presidente?';
   $r_method  = "sendMessage";
 }
-else{
-  $r_text = strpos($command,'presidente');
-  $r_method  = "sendMessage";
-}
 
 /*===================================
               RESPONSE 
