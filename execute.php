@@ -123,7 +123,7 @@ elseif($command == '/getcommand' || $command == '/getcommand@ilprocionebot'){
 ===================================*/
 //PRESIDENTE LISTENER
 elseif(strpos($command,'presidente')!==false){
-  $rand_n = rand(1,5);
+  $rand_n = rand(1,4);
   if($rand_n == 1){
     $r_text = 'Presidente?';
     $r_method  = "sendMessage";
