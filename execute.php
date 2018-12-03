@@ -100,6 +100,9 @@ elseif($command == '/procioni' || $command == '/procioni@ilprocionebot'){
     $r_photo = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC';
   }
   $r_method  = "sendPhoto";
+  
+  //rand debug
+  //$r_text = $r_text . ' `' . $rand_n . '`';
 }
 
 //SELFIE
@@ -142,8 +145,8 @@ elseif(strpos($command,'presidente')!==false){
     $r_method  = "sendPhoto";
   }
   
-  //DEBUG MODE
-  $r_text = $r_text . ' `' . $rand_n . '`';
+  //rand debug
+  //$r_text = $r_text . ' `' . $rand_n . '`';
 }
 
 /*===================================
