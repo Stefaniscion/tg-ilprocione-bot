@@ -38,7 +38,7 @@ if(strtolower($username) == 'stefaniscion'){
   }
   
   elseif($command == '/hash'){
-    $r_text = md5(file_get_contents(execute.php));
+    $r_text = md5_file ('execute.php');
     $r_method  = "sendMessage";
   }
   
