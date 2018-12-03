@@ -82,20 +82,20 @@ _-In memoria di Alex-_';
 
 //PROCIONI
 elseif($command == '/procioni' || $command == '/procioni@ilprocionebot'){
-  $photo_num = rand(1,5);
-  if($photo_num == 1){
+  $rand_n = rand(1,5);
+  if($rand_n == 1){
     $r_photo = 'AgADBAADPq4xG0ywaVNmFWcUiz1zlzB5mhoABHw3FPdcBTNC9M4GAAEC';
   }
-  elseif($photo_num == 2){
+  elseif($rand_n == 2){
     $r_photo = 'AgADBAADQK4xG0ywaVOXv1jo2V-0KfSaoBoABFnAsfn6r5UV9cQEAAEC';
   }
-  elseif($photo_num == 3){
+  elseif($rand_n == 3){
     $r_photo = 'AgADBAADQ64xG0ywaVMGQliPQqtvugllwxoABEperj8ek4m914oAAgI';
   }
-  elseif($photo_num == 4){
+  elseif($rand_n == 4){
     $r_photo = 'AgADBAADRa4xG0ywaVNpoqKTI4pKLeF7mhoABKwBCNR2e2FRG9AGAAEC';
   }
-  elseif($photo_num == 5){
+  elseif($rand_n == 5){
     $r_photo = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC';
   }
   $r_method  = "sendPhoto";
@@ -123,8 +123,23 @@ elseif($command == '/getcommand' || $command == '/getcommand@ilprocionebot'){
 ===================================*/
 //PRESIDENTE LISTENER
 elseif(strpos($command,'presidente')!==false){
-  $r_text = 'Presidente?';
-  $r_method  = "sendMessage";
+  $rand_n = rand(1,4);
+  if($rand_n == 1){
+    $r_text = 'Presidente?';
+    $r_method  = "sendMessage";
+  }
+  elseif($rand_n == 2){
+    $r_text = 'Presidente...? Presidente?';
+    $r_method  = "sendMessage";
+  }
+  elseif($rand_n == 3){
+    $r_text = 'P-presidente...?';
+    $r_method  = "sendMessage";
+  }
+  elseif($rand_n == 4){  
+    $r_photo = 'AgADBAADR7AxG__UMFDThZrk1XivgTD5mxoABFZdsyzLT4p6gG4HAAEC';
+    $r_method  = "sendPhoto";
+  }
 }
 
 /*===================================
