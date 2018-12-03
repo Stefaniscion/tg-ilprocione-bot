@@ -142,8 +142,7 @@ elseif(strpos($command,'presidente')!==false){
   }
   
   //DEBUG MODE
-  $r_text = $rand_n;
-  $r_method  = "sendMessage";
+  $r_text = $r_text . '`' . $rand_n . '`';
 }
 
 /*===================================
