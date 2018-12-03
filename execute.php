@@ -140,6 +140,10 @@ elseif(strpos($command,'presidente')!==false){
     $r_photo = 'AgADBAADR7AxG__UMFDThZrk1XivgTD5mxoABFZdsyzLT4p6gG4HAAEC';
     $r_method  = "sendPhoto";
   }
+  
+  //DEBUG MODE
+  $r_text = $rand_n;
+  $r_method  = "sendMessage";
 }
 
 /*===================================
