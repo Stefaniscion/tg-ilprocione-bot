@@ -33,22 +33,22 @@ $command = strtolower($command);
 if(strtolower($username) == 'stefaniscion'){
   
   if($command == '/getjson'){
-    $r_text = json_encode($update);
-    $r_method  = "sendMessage";
-  }
-  
-  elseif($command == '/hash'){
-    $r_text = md5_file ('execute.php');
+    $r_text = '`'.json_encode($update).'`';
     $r_method  = "sendMessage";
   }
   
   elseif(isset($message['photo'])){
-    $r_text = json_encode($update);
+    $r_text = '`'.json_encode($update).'`';
     $r_method  = "sendMessage";
   }
   
   elseif(isset($message['audio'])){
     $r_text = '`'.json_encode($update).'`';
+    $r_method  = "sendMessage";
+  }
+  
+  elseif($command == '/hash'){
+    $r_text = md5_file ('execute.php');
     $r_method  = "sendMessage";
   }
 
@@ -124,7 +124,7 @@ elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
 
 //MURLOC
 elseif($command == '/murloc' || $command == '/murloc@ilprocionebot'){
-  $r_audio = 'CQADBAADMwUAApYfQFBen1QSlF4ywI';
+  $r_audio = 'CQADBAADMwUAApYfQFB_en1QSlF4ywI';
   $r_method  = "sendAudio";
 }
 
