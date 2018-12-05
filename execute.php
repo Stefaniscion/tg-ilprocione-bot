@@ -169,7 +169,7 @@ $parameters = array(
                     'chat_id' =>  $chatId, 
                     'text' =>  $r_text,
                     'photo' =>  $r_photo,
-                    'audio' => $r_audio;
+                    'audio' => $r_audio,
                     'parse_mode' => 'Markdown'
                    );
 $parameters["method"] = $r_method;
