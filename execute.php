@@ -125,6 +125,7 @@ elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
 //MURLOC
 elseif($command == '/murloc' || $command == '/murloc@ilprocionebot'){
   $r_audio = 'CQADBAADMwUAApYfQFB_en1QSlF4ywI';
+  $r_caption = 'MMMRRRRGGGGHHLLLLLLLLLLGLGLGGLGLGL'
   $r_method  = "sendAudio";
 }
 
@@ -170,6 +171,7 @@ $parameters = array(
                     'text' =>  $r_text,
                     'photo' =>  $r_photo,
                     'audio' => $r_audio,
+                    'caption' => $r_caption,
                     'parse_mode' => 'Markdown'
                    );
 $parameters["method"] = $r_method;
