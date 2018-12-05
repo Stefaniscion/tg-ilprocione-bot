@@ -124,7 +124,7 @@ elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
 
 //MURLOC
 elseif($command == '/murloc' || $command == '/murloc@ilprocionebot'){
-  $r_audio = '';
+  $r_audio = 'CQADBAADMwUAApYfQFBen1QSlF4ywI"';
   $r_method  = "sendAudio";
 }
 
@@ -169,6 +169,7 @@ $parameters = array(
                     'chat_id' =>  $chatId, 
                     'text' =>  $r_text,
                     'photo' =>  $r_photo,
+                    'audio' => $r_audio;
                     'parse_mode' => 'Markdown'
                    );
 $parameters["method"] = $r_method;
