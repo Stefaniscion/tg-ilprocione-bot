@@ -129,7 +129,7 @@ elseif($command == '/murloc' || $command == '/murloc@ilprocionebot'){
 }
 
 elseif($command == '/getcommand' || $command == '/getcommand@ilprocionebot'){
-  $r_text = $command;
+  $r_audio = $command;
   $r_method  = "sendMessage";
 }
 
