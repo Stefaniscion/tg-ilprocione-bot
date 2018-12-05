@@ -124,7 +124,7 @@ elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
 
 //MURLOC
 elseif($command == '/murloc' || $command == '/murloc@ilprocionebot'){
-  $r_audio = 'CQADBAADMwUAApYfQFBen1QSlF4ywI"';
+  $r_audio = 'CQADBAADMwUAApYfQFBen1QSlF4ywI';
   $r_method  = "sendAudio";
 }
 
