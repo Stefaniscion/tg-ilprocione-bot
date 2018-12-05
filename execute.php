@@ -46,6 +46,11 @@ if(strtolower($username) == 'stefaniscion'){
     $r_text = json_encode($update);
     $r_method  = "sendMessage";
   }
+  
+  elseif(isset($message['audio'])){
+    $r_text = json_encode($update);
+    $r_method  = "sendMessage";
+  }
 
 }
 
@@ -115,6 +120,12 @@ elseif($command == '/selfie' || $command == '/selfie@ilprocionebot'){
 elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
   $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
   $r_method  = "sendMessage";
+}
+
+//MURLOC
+elseif($command == '/murloc' || $command == '/murloc@ilprocionebot'){
+  $r_audio = '';
+  $r_method  = "sendAudio";
 }
 
 elseif($command == '/getcommand' || $command == '/getcommand@ilprocionebot'){
