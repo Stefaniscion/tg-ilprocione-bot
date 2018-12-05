@@ -74,7 +74,7 @@ if($command == '/help' || $command == '/help@ilprocionebot'){
 elseif($command == '/about' || $command == '/about@ilprocionebot'){
   $r_text = 
 '*Il Procione*
-Il Procione è il bot definitivo per gli fan e haters dei procioni!
+Il Procione è il bot definitivo per i fan e haters dei procioni!
 
 Corretto e mantenuto da @Stefaniscion
 Consigli? Suggerimenti? Bug? Scrivi a @Stefaniscion
@@ -125,7 +125,7 @@ elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
 //MURLOC
 elseif($command == '/murloc' || $command == '/murloc@ilprocionebot'){
   $r_audio = 'CQADBAADMwUAApYfQFB_en1QSlF4ywI';
-  $r_caption = 'MMMRRRRGGGGHHLLLLLLLLLLGLGLGGLGLGL'
+  $r_caption = 'MMMRRRRGGGGHHLLLLLLLLLLGLGLGGLGLGL';
   $r_method  = "sendAudio";
 }
 
