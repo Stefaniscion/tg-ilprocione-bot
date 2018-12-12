@@ -69,11 +69,12 @@ if(strtolower($username) == 'stefaniscion'){
   //HELP
 if($command == '/help' || $command == '/help@ilprocionebot'){
   $r_text = 
-'*help* - Imparara a comunicare con i procioni!
-*about* - Info su questo procione e sul suo creatore
-*procioni* - Invia foto di procioni
-*selfie* - Ti invio un mio selfie
-*piave* - Per soli veri procioni italiani';
+'*/help* - Imparara a comunicare con i procioni!
+*/about* - Info su questo procione e sul suo creatore
+*/procioni* - Invia foto di procioni
+*/selfie* - Ti invio un mio selfie
+*/piave* - Per soli veri procioni italiani
+*/murloc* - MMMRRRRGGGGHHLLLLLLLLLLGLGLGGLGLGL';
   $r_method  = "sendMessage";
 }
 
@@ -176,7 +177,7 @@ elseif(strpos($command,'berlusconi')!==false){
     $r_method  = "sendMessage";
   }
   elseif($rand_n == 2){
-    $r_animation = 'AAQEABPueCAbAAQJeCoCW1PvraMLAAIC';
+    $r_animation = 'CgADBAADuwUAAh-UiFC4ww6XsJ2IcwI';
     $r_caption = 'Ma basta Berlusconi... basta! Se ti avessi fra le mani...!';
     $r_method  = "sendAnimation";
   }
