@@ -47,6 +47,16 @@ if(strtolower($username) == 'stefaniscion'){
     $r_method  = "sendMessage";
   }
   
+  elseif(isset($message['video'])){
+    $r_text = '`'.json_encode($update).'`';
+    $r_method  = "sendMessage";
+  }
+  
+  elseif(isset($message['animation'])){
+    $r_text = '`'.json_encode($update).'`';
+    $r_method  = "sendMessage";
+  }
+  
   elseif($command == '/hash'){
     $r_text = md5_file ('execute.php');
     $r_method  = "sendMessage";
@@ -169,11 +179,16 @@ elseif(strpos($command,'berlusconi')!==false){
     $r_method  = "sendMessage";
   }
   elseif($rand_n == 2){
-    $r_text = 'Ma basta Berlusconi... basta! Se ti avessi fra le mani...!';
+    $r_animatipn = '';
+    $r_caption = 'Ma basta Berlusconi... basta! Se ti avessi fra le mani...!';
     $r_method  = "sendMessage";
   }
   elseif($rand_n == 3){
     $r_text = 'BASTA BERLUSCONI! BASTAAAAAAH!';
+    $r_method  = "sendMessage";
+  }
+  elseif($rand_n == 3){
+    $r_text = 'Amnistia tua madre quella troia!';
     $r_method  = "sendMessage";
   }
   
