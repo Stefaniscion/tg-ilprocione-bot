@@ -178,7 +178,7 @@ elseif(strpos($command,'berlusconi')!==false){
   elseif($rand_n == 2){
     $r_animation = 'AAQEABPueCAbAAQJeCoCW1PvraMLAAIC';
     $r_caption = 'Ma basta Berlusconi... basta! Se ti avessi fra le mani...!';
-    $r_method  = "sendMessage";
+    $r_method  = "sendAnimation";
   }
   elseif($rand_n == 3){
     $r_text = 'BASTA BERLUSCONI! BASTAAAAAAH!';
