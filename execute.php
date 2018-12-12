@@ -168,14 +168,22 @@ header("Content-Type: application/json");
 
 $parameters = array(
                     'chat_id' =>  $chatId, 
-                    'text' =>  $r_text,
-                    'photo' =>  $r_photo,
-                    'audio' => $r_audio,
                     'parse_mode' => 'Markdown'
                    );
+
+if($r_text){
+  $parameters["text"] = $r_text;
+}
+if($r_photo){
+  $parameters["photo"] = $r_photo;
+}
+if($r_audio){
+  $parameters["audio"] = $r_audio;
+}
 if($r_caption){
   $parameters["caption"] = $r_caption;
 }
+
 $parameters["method"] = $r_method;
 
 echo json_encode($parameters);
