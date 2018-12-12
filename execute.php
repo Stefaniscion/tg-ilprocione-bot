@@ -80,7 +80,7 @@ Corretto e mantenuto da @Stefaniscion
 Consigli? Suggerimenti? Bug? Scrivi a @Stefaniscion
 Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot
 
-Versione: `v1.2 Murloc Racoon` del _05/12/2018_
+Versione: `v1.3 Berlusconi Racoon` del _05/12/2018_
 Hash: `'.md5_file ('execute.php').'`
 _-In memoria di Alex-_';
   $r_method  = "sendMessage";
@@ -155,6 +155,26 @@ elseif(strpos($command,'presidente')!==false){
   elseif($rand_n == 4){  
     $r_photo = 'AgADBAADR7AxG__UMFDThZrk1XivgTD5mxoABFZdsyzLT4p6gG4HAAEC';
     $r_method  = "sendPhoto";
+  }
+  
+  //rand debug
+  //$r_text = $r_text . ' `' . $rand_n . '`';
+}
+
+//BERLUSCONI LISTENER
+elseif(strpos($command,'berlusconi')!==false){
+  $rand_n = rand(1,3);
+  if($rand_n == 1){
+    $r_text = 'Basta berlusconi! BASTAAAA!';
+    $r_method  = "sendMessage";
+  }
+  elseif($rand_n == 2){
+    $r_text = 'Ma basta Berlusconi... basta! Se ti avessi fra le mani...!';
+    $r_method  = "sendMessage";
+  }
+  elseif($rand_n == 3){
+    $r_text = 'BASTA BERLUSCONI! BASTAAAAAAH!';
+    $r_method  = "sendMessage";
   }
   
   //rand debug
