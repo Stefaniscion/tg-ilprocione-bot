@@ -171,9 +171,11 @@ $parameters = array(
                     'text' =>  $r_text,
                     'photo' =>  $r_photo,
                     'audio' => $r_audio,
-                    'caption' => $r_caption,
                     'parse_mode' => 'Markdown'
                    );
+if($r_caption){
+  $parameters["caption"] = $r_caption;
+}
 $parameters["method"] = $r_method;
 
 echo json_encode($parameters);
