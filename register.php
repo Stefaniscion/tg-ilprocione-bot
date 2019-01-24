@@ -1,6 +1,6 @@
 <?php
 
-$WEBHOOK_URL = "//".$_SERVER['SERVER_NAME'].'/execute.php';
+$WEBHOOK_URL = $_SERVER['SERVER_NAME'].'/execute.php';
 echo $WEBHOOK_URL;
 $BOT_TOKEN = $_ENV['API_KEY'];
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
