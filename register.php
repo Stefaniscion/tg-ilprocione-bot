@@ -1,6 +1,6 @@
 <?php
 
-$WEBHOOK_URL = 'https://tg-ilprocione-bot.herokuapp.com/execute.php';
+$WEBHOOK_URL = '/execute.php';
 $BOT_TOKEN = $_ENV['API_KEY'];
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
 $method = 'setWebhook';
