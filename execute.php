@@ -220,9 +220,7 @@ if($r_caption){
   $parameters["caption"] = $r_caption;
 }
 
-//$parameters["method"] = $r_method;
-
-$result = Request::sendMessage($parameters);
+$parameters["method"] = $r_method;
 
 echo json_encode($parameters);
 
