@@ -11,6 +11,13 @@ curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($handle, CURLOPT_TIMEOUT, 60);
 $result = curl_exec($handle);
+
+echo '<pre>';
+echo $WEBHOOK_URL;
+echo '</pre>';
+
+echo '<pre>';
 print_r($result);
+echo '</pre>';
 
 ?>
