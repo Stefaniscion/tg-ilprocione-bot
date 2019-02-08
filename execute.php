@@ -72,6 +72,7 @@ if($command == '/help' || $command == '/help@ilprocionebot'){
 */procioni* - Invia foto di procioni
 */selfie* - Ti invio un mio selfie
 */piave* - Per soli veri procioni italiani
+*/fiume* - Fiume tornerà italiana
 */murloc* - MMMRRRRGGGGHHLLLLLLLLLLGLGLGGLGLGL';
   $r_method  = "sendMessage";
 }
