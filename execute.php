@@ -86,7 +86,7 @@ Corretto e mantenuto da @Stefaniscion
 Consigli? Suggerimenti? Bug? Scrivi a @Stefaniscion
 Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot
 
-Versione: `v1.3 Berlusconi Racoon` del _05/12/2018_
+Versione: `v1.4 Fascist Racoon` del _05/12/2018_
 Hash: `'.md5_file ('execute.php').'`
 _-In memoria di Alex-_';
   $r_method  = "sendMessage";
@@ -124,7 +124,25 @@ elseif($command == '/selfie' || $command == '/selfie@ilprocionebot'){
 
 //FIUME
 elseif($command == '/fiume' || $command == '/fiume@ilprocionebot'){
-  $r_photo = 'AgADBAAD9q8xG1CF6VKrBGb-VfJ-qiaGKRsABN_k1rlJneEm-skBAAEC';
+  $rand_n = rand(1,6);
+  if($rand_n == 1){
+    $r_photo = 'AgADBAAD9q8xG1CF6VKrBGb-VfJ-qiaGKRsABN_k1rlJneEm-skBAAEC';
+  }
+  elseif($rand_n == 2){
+    $r_photo = 'AgADBAAD968xG1CF6VKS00b4r6-xjAtQIBsABGZWejBZKGX8QmYCAAEC';
+  }
+  elseif($rand_n == 3){
+    $r_photo = 'AgADBAAD-a8xG1CF6VJ7RhLlXArpa4guHxsABJdLuwlm2l_1gGsCAAEC';
+  }
+  elseif($rand_n == 4){
+    $r_photo = 'AgADBAAD-68xG1CF6VK5ThUH7X0byhPSLBsABLTQdKcuRvQfIicAAgI';
+  }
+  elseif($rand_n == 5){
+    $r_photo = 'AgADBAAD_K8xG1CF6VIeJcqlnkzI-R3tLBsABBht1fx5L_FP7ycAAgI';
+  }
+  elseif($rand_n == 6){
+    $r_photo = 'AgADBAAD_q8xG1CF6VI9wP3QTxBweZx1wxoABPIJcjrFllGzpZIDAAEC';
+  }
   $r_method  = "sendPhoto";
 }
 //PIAVE
