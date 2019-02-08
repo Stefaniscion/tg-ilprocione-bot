@@ -122,6 +122,11 @@ elseif($command == '/selfie' || $command == '/selfie@ilprocionebot'){
   $r_method  = "sendPhoto";
 }
 
+//FIUME
+elseif($command == '/fiume' || $command == '/fiume@ilprocionebot'){
+  $r_photo = 'AgADBAAD9q8xG1CF6VKrBGb-VfJ-qiaGKRsABN_k1rlJneEm-skBAAEC';
+  $r_method  = "sendPhoto";
+}
 //PIAVE
 elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
   $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
