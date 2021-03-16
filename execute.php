@@ -87,8 +87,9 @@ Corretto e mantenuto da @Stefaniscion
 Consigli? Suggerimenti? Bug? Scrivi a @Stefaniscion
 Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot
 
-Versione: `v1.4 Fascist Racoon` del _05/12/2018_
+Versione: `v1.5 Secreet Racoon` del _16/03/2021_
 Hash: `'.md5_file ('execute.php').'`
+_-La leggenda narra di un programmatore che, spronato da un admin, inserì nel suo bot un comando segreto-_
 _-In memoria di Alex-_';
   $r_method  = "sendMessage";
 }
