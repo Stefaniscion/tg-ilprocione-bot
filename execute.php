@@ -89,7 +89,7 @@ Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione
 
 Versione: `v1.5 Secreet Racoon` del _16/03/2021_
 Hash: `'.md5_file ('execute.php').'`
-_-La leggenda narra di un programmatore che, spronato da un admin, inserì nel suo bot un comando segreto-_
+_La leggenda narra di un programmatore che, spronato da un admin, inserì nel suo bot un comando segreto..._
 _-In memoria di Alex-_';
   $r_method  = "sendMessage";
 }
