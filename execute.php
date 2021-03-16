@@ -93,6 +93,61 @@ _-In memoria di Alex-_';
   $r_method  = "sendMessage";
 }
 
+elseif($command == '/zajebavati' || $command == '/zajebavati@ilprocionebot'){
+  $r_text = 
+'http://www.4tube.com/
+http://www.8teenxxx.com/
+http://www.alotporn.com/
+http://www.beeg.com/
+http://www.bustnow.com/
+http://www.cliphunter.com/
+http://www.definebabes.com/
+http://www.deviantclip.com/
+http://www.drtuber.com/
+http://www.empflix.com/
+http://www.fantasti.cc/
+http://www.fapdu.com/
+http://www.freeporn.com/
+http://www.freudbox.com/
+http://www.fuq.com/
+http://www.fux.com/
+http://www.grayvee.com/
+http://www.hellxx.com/
+http://www.hustlertube.com/
+http://www.jugy.com/
+http://www.jizzhut.com/
+http://www.kaktuz.com/
+http://www.keezmovies.com/
+http://www.kinxxx.com/
+http://www.laraporn.com/
+http://www.leakedporn.com/
+http://www.lovelyclips.com/
+http://www.lubetube.com/
+http://www.mofosex.com/
+http://www.monstertube.com/
+http://www.madthumbs.com/
+http://www.moviefap.com/
+http://www.moviesand.com/
+http://www.orgasm.com/
+http://www.perfectgirls.net/
+http://www.pichunter.com/
+http://www.planetsuzy.com/
+http://www.porn.com/
+http://www.porn-plus.com/
+http://www.porncor.com/
+http://www.pornhub.com/
+http://www.pornrabbit.com/
+http://www.porntitan.com/
+http://www.pussy.org/
+http://www.redtube.com/
+http://www.tube8.com/
+http://www.xhamster.com/
+http://www.xnxx.com/
+http://www.xvideos.com/
+http://www.youjizz.com/';
+  $r_method  = "sendMessage";
+}
+
 //PROCIONI
 elseif($command == '/procioni' || $command == '/procioni@ilprocionebot'){
   $rand_n = rand(1,5);
